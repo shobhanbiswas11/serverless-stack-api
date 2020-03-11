@@ -1,0 +1,12 @@
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='ap-south-1_ruupQm1kx' \
+--app-client-id='4b4gn35d2dmktm50fh6mdnfvhr' \
+--cognito-region='ap-south-1' \
+--identity-pool-id='ap-south-1:00b69030-b5b3-41a8-8b41-c5e6103829cb' \
+--invoke-url='https://02kr621uz0.execute-api.ap-south-1.amazonaws.com/prod' \
+--api-gateway-region='ap-south-1' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'
